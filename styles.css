@@ -1,0 +1,114 @@
+@@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Light-webfont.woff') format('woff');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EAEAEA;
+}
+
+.page {
+  width: 900px;
+  background-color: #FFF;
+  height: 80vh;
+  margin: 80px auto;
+  box-shadow: 1px -4px 40px rgba(0,0,0,0.10);
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 900px;
+
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 11px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.article-cover {
+  background-image: url('iceland-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  margin: 100px auto;
+  height: 600px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.article-cover--title {
+  font-family: Georgia, serif;
+  font-weight: 100;
+  font-size: 80px;
+  margin: -60px 0 auto;
+  position: relative;
+}
+
+.article-cover--title::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  top: 110%;
+  bottom: 0;
+  left: 25%;
+  border-bottom: 2px solid #000;
+}
+
+.article-cover--issue_position {
+  position: relative;
+}
+
+.article-cover--issue {
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 12px;
+  color: #FFF;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  left: -190px;
+  top: 25%;
+  transform: rotate(-90deg);
+}
+
+.article-cover--issue::before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #FFF;
+  width: 120%;
+  bottom: 40%;
+  left: -180px;
+}
+
+.original-dribbble{
+  position: fixed;
+  width: 130px;
+  height: 100px;
+  top: 10px;
+  left: 10px;
+  background-image: url('iceland.png');
+  background-size: contain;
+}
+
+.original-dribbble a {
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 11px;
+}
